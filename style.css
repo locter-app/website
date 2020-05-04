@@ -13,7 +13,6 @@ body {
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-  background-image: url(images/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,6 +22,16 @@ body {
 @media only screen and (min-width: 1000px) {
   body {
     height: 100vh;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: url(images/background-light.jpg);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url(images/background-dark.jpg);
   }
 }
 
@@ -59,10 +68,22 @@ header > h1 {
 }
 
 .content > .preview {
-  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 500px;
+  height: 524px;
 }
-.content > .preview > img {
-  width: 300px;
+@media (prefers-color-scheme: light) {
+  .content > .preview {
+    background-image: url(images/preview-light.png);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .content > .preview {
+    background-image: url(images/preview-dark.png);
+  }
 }
 
 .content > .intro {
@@ -74,6 +95,17 @@ header > h1 {
 .content > .intro p {
   color: #72636e;
 }
+@media (prefers-color-scheme: light) {
+  .content > .intro p {
+    color: #72636e;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .content > .intro p {
+    color: #eea9a9;
+  }
+}
+
 .content > .intro > .download {
   padding-top: 3rem;
   align-self: center;
