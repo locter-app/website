@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  background-image: url(images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+
+  color: #622954;
+}
+
+header {
+  flex-basis: 10%;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+}
+
+.content > .preview > img {
+  width: 300px;
+}
+
+.content > .intro {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-top: 3rem;
+}
+.content > .intro p {
+  color: #72636e;
+}
+.content > .intro > .download {
+  align-self: center;
+}
+
+footer {
+  color: #fedfe1;
+  padding-bottom: 1rem;
+  text-align: center;
+}
