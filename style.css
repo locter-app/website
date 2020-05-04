@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -74,7 +75,15 @@ header > h1 {
   color: #72636e;
 }
 .content > .intro > .download {
+  padding-top: 3rem;
   align-self: center;
+  padding-bottom: 3rem;
+}
+@media only screen and (min-width: 1000px) {
+  .content > .intro > .download {
+    padding-top: 3rem;
+    align-self: auto;
+  }
 }
 
 footer {
