@@ -81,8 +81,7 @@ header > h1 {
 }
 @media only screen and (min-width: 1000px) {
   .content > .intro > .download {
-    padding-top: 3rem;
-    align-self: auto;
+    align-self: start;
   }
 }
 
