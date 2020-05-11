@@ -26,12 +26,12 @@ body {
 }
 @media (prefers-color-scheme: light) {
   body {
-    background-image: url(images/background-light.jpg);
+    background-image: url(images/background-light.svg);
   }
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: url(images/background-dark.jpg);
+    background-image: url(images/background-dark.svg);
   }
 }
 
@@ -44,20 +44,44 @@ main {
   max-width: 1000px;
   height: 100%;
 
-  color: #622954;
+  color: #1c1836;
 }
 
 header {
   flex-basis: 10%;
   padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
 }
+@media only screen and (min-width: 1000px) {
+  header {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+}
+
+header > img {
+  width: 4rem;
+  height: 4rem;
+}
+
 header > h1 {
-  color: #3f2b36;
+  color: #1c1836;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+@media only screen and (min-width: 1000px) {
+  header > h1 {
+    text-align: left;
+  }
 }
 
 .content {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   padding: 1rem;
 }
 @media only screen and (min-width: 1000px) {
@@ -92,17 +116,32 @@ header > h1 {
 
   padding-top: 3rem;
 }
+.content > .intro h2 {
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .content > .intro h2 {
+    text-align: left;
+  }
+}
+
 .content > .intro p {
-  color: #72636e;
+  color: #000036;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .content > .intro p {
+    text-align: left;
+  }
 }
 @media (prefers-color-scheme: light) {
   .content > .intro p {
-    color: #72636e;
+    color: #000036;
   }
 }
 @media (prefers-color-scheme: dark) {
   .content > .intro p {
-    color: #eea9a9;
+    color: #3b0053;
   }
 }
 
@@ -118,7 +157,8 @@ header > h1 {
 }
 
 footer {
-  color: #fedfe1;
-  padding-bottom: 1rem;
+  color: #000036;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
