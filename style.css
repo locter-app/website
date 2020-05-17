@@ -156,9 +156,27 @@ header > h1 {
   }
 }
 
+.content > .support {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
 footer {
   color: #000036;
   padding-top: 5rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+footer > nav {
+  margin: 0 0 3rem 0;
+}
+footer > nav > a {
+  color: #000036;
+  text-decoration: none;
+  margin: 0 0.5rem 0 0.5rem;
+}
+footer > nav > a:hover {
+  color: #3b0053;
+  text-decoration: none;
 }
